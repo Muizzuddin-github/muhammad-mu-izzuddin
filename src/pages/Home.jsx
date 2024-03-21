@@ -36,7 +36,6 @@ const Home = () => {
 
     TechnologyApi.getAll()
       .then((res) => {
-        console.log(res.data.data);
         setTech(res.data.data);
         setIsLoading(false);
       })
